@@ -1,0 +1,159 @@
+body {
+  overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+  /* font-family: 'Playfair Display', serif; */
+  /* font-family: 'IBM Plex Sans', sans-serif; */
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Quicksand', sans-serif; */
+  /* font-family: 'Libre Baskerville', serif; */
+  /* font-family: 'Open Sans', sans-serif; */
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Didact Gothic', sans-serif; 
+}
+h2 {
+  font-weight: lighter;
+}
+body {
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'IBM Plex Serif', serif; */
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  /* font-family: 'Open Sans', sans-serif; */
+ 
+ 
+  /* font-family: 'Libre Baskerville', serif; */
+  /* font-family: 'Alegreya', serif; */
+  font-size: medium;
+
+  /* font-family: 'Playfair Display', serif; */
+  /* font-family: 'Lora', serif; */
+  font-family: 'Arimo', sans-serif;
+}
+nav .logo {
+  position: absolute;
+  top: -30%;
+}
+
+.left-space {
+  margin-left: 25%;
+}
+.hero{
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+ .hero-after-animation {
+  height: 100vh;
+  width: 100vw;
+}
+
+.gradient-text {
+  background: linear-gradient(to right,#e74c3c, #000000 );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.curved-btn {
+  border-radius: 20px;
+}
+
+.outer {
+  border-bottom: 1px solid black;
+  overflow: hidden;
+}
+
+#pin-container {
+  width: auto;
+  height: 500px;
+  overflow: hidden;
+}
+.panel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+svg {
+  height: 350px;
+  width: 350px;
+  /* opacity: 0; */
+}
+#van {
+  position: absolute;
+  top: 45%;
+  left: 0;
+}
+
+#carrying-wire {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+}
+
+#wire-on-wall {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  height: 180px;
+  width: 180px;
+}
+
+#opening-grid {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+
+#kneeling-grid {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  height: 700px;
+  width: 700px;
+}
+
+#climbing-pole {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+
+#holding-switch {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+}
+
+#house {
+  position: absolute;
+  top: 37%;
+  left: 45%;
+}
+
+#down-arrow {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  height: 60px;
+  width: 60px;
+  fill: white;
+
+}
+
+#facebook, #instagram, #twitter {
+  height: 35px;
+  width: 35px;
+}
+
+#facebook {
+  fill: #3b5998;
+}
+
+#instagram {
+  fill: url('#brand-gradient');
+}
+
+#twitter {
+  fill: #00acee;
+}

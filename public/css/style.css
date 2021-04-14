@@ -1,0 +1,180 @@
+body {
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'IBM Plex Sans', sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Quicksand', sans-serif; */
+    /* font-family: 'Libre Baskerville', serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Didact Gothic', sans-serif; 
+  }
+  h2 {
+    font-weight: lighter;
+  }
+  body {
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'IBM Plex Serif', serif; */
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+   
+   
+    /* font-family: 'Libre Baskerville', serif; */
+    /* font-family: 'Alegreya', serif; */
+    font-size: medium;
+  
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Lora', serif; */
+    font-family: 'Arimo', sans-serif;
+  }
+
+  i:hover {
+    cursor: pointer;
+  }
+  nav .logo {
+    position: absolute;
+    top: -30%;
+  }
+  
+  .left-space {
+    margin-left: 25%;
+  }
+  .hero{
+    height: 100vh;
+    width: 100vw;
+    /* display: none; */
+  }
+   .hero-after-animation {
+    height: 100vh;
+    width: 100vw;
+    display: none
+  }
+  
+  .gradient-text {
+    background: linear-gradient(to right,#e74c3c, #000000 );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .curved-btn {
+    border-radius: 20px;
+  }
+  
+  .outer {
+    border-bottom: 1px solid black;
+    overflow: hidden;
+  }
+  
+  #pin-container {
+    width: auto;
+    height: 500px;
+    overflow: hidden;
+  }
+  .panel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .member {
+    height: 250px;
+  }
+  
+  svg {
+    height: 350px;
+    width: 350px;
+    opacity: 0;
+  }
+  #van {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    /* display: none; */
+  }
+  
+  #carrying-wire {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    /* display: none; */
+  }
+
+  #wire-on-wall {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    height: 180px;
+    width: 180px;
+    /* display: none; */
+  }
+
+  #opening-grid {
+    position: absolute;
+    top: 53%;
+    left: 25%;
+    /* display: none; */
+  }
+  
+  #kneeling-grid {
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    height: 700px;
+    width: 700px;
+    /* display: none; */
+  }
+  
+  #climbing-pole {
+    position: absolute;
+    top: 43%;
+    left: 40%;
+    /* display: none; */
+  }
+  
+  #holding-switch {
+    position: absolute;
+    top: 48%;
+    left: 32%;
+    /* display: none; */
+  }
+  
+  #house {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    /* display: none; */
+  }
+  
+  #down-arrow {
+    position: absolute;
+    left: 48%;
+    top: 90%;
+    height: 60px;
+    width: 60px;
+    fill: white;
+  
+  }
+  .card-close-btn {
+    position: relative;
+    top: 50%;
+  }
+
+  #facebook, #instagram, #twitter {
+    height: 35px;
+    width: 35px;
+  }
+  
+  #facebook {
+    fill: #3b5998;
+  }
+  
+  #instagram {
+    fill: url('#brand-gradient');
+  }
+  
+  #twitter {
+    fill: #00acee;
+  }

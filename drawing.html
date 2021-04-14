@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <title>Document</title>
+    <style>
+       
+        #pin-container {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+        .panel {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="row">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, temporibus facere consectetur, ullam nobis inventore aliquid accusamus sapiente incidunt quasi qui quia esse laboriosam numquam suscipit animi provident, eveniet tempore fugiat debitis. Assumenda iusto mollitia dolore minus libero dolor, eos aliquam aspernatur, dignissimos suscipit similique debitis neque ipsa laboriosam reiciendis error. Optio, assumenda rerum! Ipsa possimus similique illum debitis odit est at, ipsum accusamus vitae aperiam, enim impedit laboriosam laborum saepe eos, consequuntur animi? Nesciunt, asperiores natus quibusdam earum similique tenetur fugit doloremque ab magni provident corrupti ad repellat mollitia beatae distinctio iste reiciendis maxime ut esse! Sunt, et consectetur.</p>
+       </div>
+
+       <div class="row">
+           <div id="pin-container">
+               <div class="panel">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="solar.jpg" alt="" height="250" width="250">
+                    </div>
+                    <div class="card-stacked">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sit tempore ducimus quis est saepe velit minus voluptate, exercitationem quas quam repellat unde id quo, nemo error corporis, aperiam consequuntur.</p>
+                    </div>
+                </div>
+               </div>
+                
+               <div class="panel">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="streetlight.jpg" alt="" height="250" width="250">
+                    </div>
+                    <div class="card-stacked">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sit tempore ducimus quis est saepe velit minus voluptate, exercitationem quas quam repellat unde id quo, nemo error corporis, aperiam consequuntur.</p>
+                    </div>
+                </div>
+               </div>
+             
+               <div class="panel">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="generator.jpg" alt="" height="250" width="250">
+                    </div>
+                    <div class="card-stacked">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <div class="divider"></div>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <div class="divider"></div>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                </div>
+               </div>
+              
+           </div>
+       </div>
+       <div class="row">
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque excepturi minus in at? Ipsam expedita dolorum dolore corrupti maiores doloribus soluta, tempora voluptatem dolor ducimus minus culpa nobis molestiae odit quidem recusandae laboriosam tempore nemo quibusdam blanditiis aliquam cum! Eum illo ipsam molestiae quasi laudantium ex expedita voluptatum, saepe tempora dolorem alias qui quisquam. Sapiente expedita corporis unde aspernatur voluptas error harum quam totam eius praesentium quod eaque sed veniam nihil voluptate voluptates, tempora deserunt iure cumque? Impedit quo sequi iste numquam necessitatibus, blanditiis facere voluptates asperiores ab ipsum inventore vel atque accusantium mollitia iusto repellat sint. Atque, fugiat totam.</p>
+       </div>
+   </div>
+   
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script>
+        const panels = document.querySelectorAll('.panel');
+        const controller = new ScrollMagic.Controller();
+        let wipe = gsap.timeline({defaults: {ease: 'linear.easeNone'}});
+        wipe
+           .fromTo(panels[1], {x: '-100%'}, {duration: 1, x: '0%'})
+           .fromTo(panels[2], {x: '100%'}, {duration: 1, x: '0%'});
+
+        new ScrollMagic.Scene({
+            triggerElement: '#pin-container',
+            triggerHook: 'onLeave',
+            duration: '200%'
+        })
+        .setPin('#pin-container')
+        .setTween(wipe)
+        .addIndicators({
+            colorTrigger: 'black',
+            colorStart: 'black',
+            colorEnd: 'black'
+        })
+        .addTo(controller);
+    </script>
+</body>
+</html>
